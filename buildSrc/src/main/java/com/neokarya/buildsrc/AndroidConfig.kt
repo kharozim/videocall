@@ -8,10 +8,10 @@ package com.neokarya.buildsrc
  */
 object AndroidConfig {
   const val applicationId = "com.neokarya.sdk"
-  const val versionCode = 5
-  const val versionName = "1.0.0"
+  const val versionCode = 2
+  const val versionName = "1.0.1"
   const val compileSdk = 36
   const val minSdk = 25
-  const val targetSdk = 35
+  const val targetSdk = 36
   const val jvmTarget = "17"
 }
