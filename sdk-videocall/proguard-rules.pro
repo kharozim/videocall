@@ -22,3 +22,7 @@
 
 -keep class io.agora.** { *; }
 -dontwarn io.agora.**
+
+-keep class com.neokarya.sdk_videocall.VideoCall
+-keep class com.neokarya.sdk_videocall.VideoCallUrl
+-keep class com.neokarya.sdk_videocall.VideoCallDialog
