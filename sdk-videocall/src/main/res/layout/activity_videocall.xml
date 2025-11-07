@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+  <FrameLayout
+      android:id="@+id/local_video_view_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@android:color/background_dark"
+      />
+
+  <FrameLayout
+      android:id="@+id/remote_video_view_container"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:background="@android:color/darker_gray"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <TextView
+      android:id="@+id/tvCallRequest"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/call_request"
+      android:textColor="@android:color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      />
+
+  <!--  <ImageView-->
+  <!--      android:id="@+id/btnCallAction"-->
+  <!--      android:layout_width="54dp"-->
+  <!--      android:layout_height="54dp"-->
+  <!--      android:layout_marginBottom="48dp"-->
+  <!--      android:src="@drawable/ic_call_end"-->
+  <!--      app:layout_constraintBottom_toBottomOf="parent"-->
+  <!--      app:layout_constraintEnd_toEndOf="parent"-->
+  <!--      app:layout_constraintStart_toStartOf="parent"-->
+  <!--      />-->
+  <!--  -->
+  <Button
+      android:id="@+id/btnCallAction"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="48dp"
+      android:text="call"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
