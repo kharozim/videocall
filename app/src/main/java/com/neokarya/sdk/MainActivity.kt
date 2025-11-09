@@ -63,8 +63,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     binding.btnDialog.setOnClickListener {
-      VideoCallDialog.Builder()
-        .start(supportFragmentManager)
+      VideoCallDialog.with(supportFragmentManager)
+        .start()
     }
   }
 

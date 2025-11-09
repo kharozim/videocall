@@ -24,12 +24,14 @@ import kotlinx.coroutines.launch
  * Copyright (c) 2025. VideoCall
  * All Rights Reserved
  */
-open class VideoCallDialog {
+class VideoCallDialog {
+
   companion object {
-    fun with(): Builder = Builder()
+    @JvmStatic
+    fun with(fragmentManager: FragmentManager): Builder = Builder(fragmentManager)
   }
 
-  class Builder() : BottomSheetDialogFragment() {
+  class Builder(private val fragmentManager: FragmentManager) : BottomSheetDialogFragment() {
     private lateinit var binding: DialogWebviewBinding
 
     private val factory by lazy {
@@ -102,7 +104,7 @@ open class VideoCallDialog {
       }
     }
 
-    fun start(fragmentManager: FragmentManager) {
+    fun start() {
       if (!isVisible) {
         show(fragmentManager, VideoCallDialog::class.simpleName)
       }
